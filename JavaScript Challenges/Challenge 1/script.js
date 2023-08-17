@@ -2,17 +2,17 @@ console.log('I am linked now!');
 
 //step2
 var name;
-let name="Assala";
-alert (Assala);
+let name = "Assala";
+alert(Assala);
 
 //step3
-let age=23;
-var lastName="Meslmani";
-const DOB="2000-10-10";
-age=25;
-lastName="Jean";
-DOB="1998-06-10";
-console.log(age,lastName,DOB);
+let age = 23;
+var lastName = "Meslmani";
+const DOB = "2000-10-10";
+age = 25;
+lastName = "Jean";
+DOB = "1998-06-10";
+console.log(age, lastName, DOB);
 
 //step4
 console.log(typeof "this is a text");
@@ -25,28 +25,28 @@ console.log(typeof []);
 console.log(typeof null);
 console.log(typeof undefined);
 
-let name="Assala";//string
+let name = "Assala";//string
 let weight = 53;//number
-let student=true;//boolean
-let height=1.68;//number
-let hobbies=["reading","painting","swimming","basketball"];//array
-let address={street:"123 main st",city:"beirut"};//object
+let student = true;//boolean
+let height = 1.68;//number
+let hobbies = ["reading", "painting", "swimming", "basketball"];//array
+let address = { street: "123 main st", city: "beirut" };//object
 
 console.log("name:", typeof name);
 console.log("weight:", typeof weight);
 console.log("student:", typeof student);
 console.log("height:", typeof height);
-console.log("hobbies:",typeof hobbies);
+console.log("hobbies:", typeof hobbies);
 console.log("address:", typeof address);
 
 //step5
-let myText ="Hello, how are you?"
+let myText = "Hello, how are you?"
 
-let text1="this is a string using double quotations";//double quot
+let text1 = "this is a string using double quotations";//double quot
 
-let text2='this is a string using single quotation'; //single quot
+let text2 = 'this is a string using single quotation'; //single quot
 
-let text3='this is a sting using backticks (template literals)';//backticks
+let text3 = 'this is a sting using backticks (template literals)';//backticks
 
 const counter = 3;
 const backtick = `This is my text using backticks ${counter} times`;
@@ -60,3 +60,10 @@ console.log("doubleQuote:", doubleQuote);
 console.log("tryThisAlso:", tryThisAlso);
 //This will log the values of all the variables (`backtick`, singleQuote, doubleQuote, `tryThisAlso`) to the console.
 //backticks (template literals) are the most versatile as they support string interpolation and multi-line strings. Single and double quotations are more basic and do not support string interpolation.
+
+//step6
+const greeting = "Hello, how are you!";
+const favcolor = "my fav color is black.";
+
+let result;
+result = greeting + "" + favcolor;
