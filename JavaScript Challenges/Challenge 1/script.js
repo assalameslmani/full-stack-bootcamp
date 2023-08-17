@@ -101,3 +101,14 @@ console.log("apple" < "banana"); // true
 // Less than or equals (<=):
 console.log(5 <= 5); // true
 console.log("apple" <= "banana"); // true
+
+//step8
+let result0 = 5 + 3 * 2;
+
+let result1 = 10 / 2 + 3;
+
+let result2 = 10 / (2 + 3);
+
+console.log(result0);//output:11
+console.log(result1);//output:8
+console.log(result2);//output:2
