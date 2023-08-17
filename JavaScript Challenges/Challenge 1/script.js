@@ -67,3 +67,37 @@ const favcolor = "my fav color is black.";
 
 let result;
 result = greeting + "" + favcolor;
+
+//step7
+//Strict Equality Operator (===):
+console.log(5 === "5"); // false
+console.log(true === 1); // false
+
+//Strict Inequality Operator (!==):
+console.log(5 !== "5"); // true
+console.log(true !== 1); // true
+
+//Loose Equality Operator (==):
+console.log(5 == "5"); // true
+console.log(true == 1); // true
+
+//Loose Inequality Operator (!=):
+console.log(5 != "5"); // false
+console.log(true != 1); // false
+
+
+//Greater than (>): 
+console.log(5 > 3); // true
+console.log("apple" > "banana"); // false
+
+//Greater than or equals (>=):
+console.log(5 >= 5); // true
+console.log("apple" >= "banana"); // false
+
+//Less than (<):
+console.log(3 < 5); // true
+console.log("apple" < "banana"); // true
+
+// Less than or equals (<=):
+console.log(5 <= 5); // true
+console.log("apple" <= "banana"); // true
