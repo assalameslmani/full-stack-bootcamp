@@ -25,6 +25,7 @@ console.log(expression4);
 const agee = 25;
 const hasDriverLicense = true;
 const hasCar = false;
+const needDriver = true;
 //2
 if (agee >= 18 && hasDriverLicense) {
     canDrive = true;
