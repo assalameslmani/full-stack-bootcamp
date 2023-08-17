@@ -30,7 +30,7 @@
 - Assign appropriate values to each variable.
 - Experiment with changing variable values.
 - Log all 3 variables to the console.
-- Compare the outcomes of the three declaration methods.
+- Compare the outcomes of the three declaration methods:let and var allow for reassignment,while const does not;var has function scope but let and const have block scope.
 - Commit: "Challenge 1 - Done with Step 3"
 
 ## Exploring Data Types
