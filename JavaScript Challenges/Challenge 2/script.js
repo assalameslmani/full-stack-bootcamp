@@ -40,3 +40,25 @@ if (age < 18 && !hasDriverLicense && !hasCar) {
     needDriver = true;
 }
 console.log(needDriver);
+
+
+//step3
+//1
+let role = "admin";
+
+
+//2
+switch (role) {
+    case "admin":
+        console.log("You have onlu read and write access for the data");
+        break;
+    case "user":
+        console.log("You have only read access for the data");
+        break;
+    case "guest":
+        console.log("You have no access for the data");
+        break;
+    default:
+        console.log("User role is not recongmized");
+
+}
