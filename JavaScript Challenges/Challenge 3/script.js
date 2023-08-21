@@ -83,9 +83,43 @@ console.log(globalVar)
 
 
 const squareNumber3 = (number) => {
-    let localVar ;
+    let localVar;
     console.log(localVar);
     return number * number;
 };
 
 console.log(squareNumber3(3));
+
+
+
+//step3
+//For Loop
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+
+//While Loop
+let i=10;
+while(i>=1){
+    console.log(i);
+    i--;
+}
+
+//Do-While Loop
+let e= 1;
+
+do {
+  if (e % 2 === 0) {
+    console.log(e);
+  }
+  e++;
+} while (e <= 10);
+
+//Advanced Loop
+const favoriteFruits = ["mango", "pineapple", "strawberry", "watermelon", "kiwi"];
+
+for (let i = 0; i < favoriteFruits.length; i++) {
+  if (favoriteFruits[i].length > 5) {
+    console.log(favoriteFruits[i]);
+  }
+}
