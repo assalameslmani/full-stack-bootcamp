@@ -61,3 +61,31 @@ function compute(num1, num2, operation) {
 
 console.log(compute(50, 5));
 
+
+
+//step2
+
+let number;
+
+const squareNumber = (number) => number * number;
+
+console.log(squareNumber(10));
+
+let globalVar = 5;
+
+const squareNumber2 = (number) => {
+    console.log(globalVar);
+    return number * number
+}
+
+console.log(squareNumber2(5));
+console.log(globalVar)
+
+
+const squareNumber3 = (number) => {
+    let localVar ;
+    console.log(localVar);
+    return number * number;
+};
+
+console.log(squareNumber3(3));
