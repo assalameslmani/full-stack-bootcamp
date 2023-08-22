@@ -59,7 +59,7 @@ function compute(num1, num2, operation) {
     }
 }
 
-console.log(compute(50, 5,"divide"));
+console.log(compute(50, 5," divide"));
 
 
 
