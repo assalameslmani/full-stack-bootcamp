@@ -19,17 +19,24 @@ console.log(personalInfo);
 
 let nextThreeNumbers = [6, 7, 8];
 let allNumbers =
-fiveNumbers.concat(nextThreeNumbers);
+    fiveNumbers.concat(nextThreeNumbers);
 //concat: used to combine the fivenumbers array with the nextthreenumbers.
 console.log(nextThreeNumbers);
 console.log(allNumbers);
 
 let additionalInfo = {
-    occupation:"software enginner",
-    hobby:"reading",
-    education:"bachelor's degree",
+    occupation: "software enginner",
+    hobby: "reading",
+    education: "bachelor's degree",
 };
 console.log(additionalInfo);
 
-let fullInfo = {...personalInfo, ...additionalInfo};
+let fullInfo = { ...personalInfo, ...additionalInfo };
 console.log(fullInfo);
+
+
+//step 3
+
+let [firstNum, secondNum, thridNum] = fiveNumbers;
+
+let { name, location, nationality } = personalInfo;
