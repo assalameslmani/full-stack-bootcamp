@@ -39,4 +39,15 @@ console.log(fullInfo);
 
 let [firstNum, secondNum, thridNum] = fiveNumbers;
 
-let { name, location, nationality } = personalInfo;
+let { name1, location1, nationality } = personalInfo;
+
+
+//step 4 
+
+let contactInfo ={
+    email:"scjkcsksj@gmail.com",
+    phone:154852232,
+}
+
+let restOfNumbers = fiveNumbers.slice(2);
+console.log(restOfNumbers);
