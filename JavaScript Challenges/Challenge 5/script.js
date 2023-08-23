@@ -29,3 +29,53 @@ headings.forEach(heading => {
 });
 
 document.body.appendChild(containerDiv);
+
+
+//step 2
+const button = document.createElement("button");
+button.innerText = "Hover Me";
+
+button.addEventListener("mouseover", function() {
+  button.style.backgroundColor = "blue";
+});
+
+button.addEventListener("mouseout", function() {
+  button.style.backgroundColor = "initial";
+});
+
+document.body.appendChild(button);
+
+const container = document.getElementById("original");
+
+container.addEventListener("click", function(event) {
+  if (event.target.tagName === "BUTTON") {
+    console.log(event.target.textContent);
+  }
+});
+
+
+const form = document.createElement("form");
+
+const nameInput = document.createElement("input");
+nameInput.type = "text";
+nameInput.placeholder = "Name";
+
+const emailInput = document.createElement("input");
+emailInput.type = "email";
+emailInput.placeholder = "Email";
+
+const submitButton = document.createElement("button");
+submitButton.type = "submit";
+submitButton.textContent = "Submit";
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+  console.log("Name:", nameInput.value);
+  console.log("Email:", emailInput.value);
+});
+
+form.appendChild(nameInput);
+form.appendChild(emailInput);
+form.appendChild(submitButton);
+
+document.body.appendChild(form);
