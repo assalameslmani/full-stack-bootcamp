@@ -79,3 +79,30 @@ form.appendChild(emailInput);
 form.appendChild(submitButton);
 
 document.body.appendChild(form);
+
+
+//step 3
+
+
+
+
+const removeBtn = document.createElement("button");
+removeBtn.textContent = "Remove Header";
+
+// Add event listener to the button
+removeBtn.addEventListener("click", function() {
+  const header = document.querySelector("h1");
+  if (header) {
+    header.remove();
+  }
+});
+document.body.appendChild(removeBtn);
+
+function insertBeforeFooter(element) {
+    const footer = document.querySelector("footer");
+    footer.parentNode.insertBefore(element, footer);
+  }
+
+  const newElement = document.createElement("div");
+newElement.textContent = "This is a new element";
+insertBeforeFooter(newElement);
