@@ -24,3 +24,40 @@ setTimeout(function() {
     console.log("Chained message!");
   });
   
+
+  //step2
+  function simulateNetworkRequest() {
+    return new Promise(function(resolve, reject) {
+      setTimeout(function() {
+        var randomNumber = Math.random();
+        if (randomNumber < 0.5) {
+          resolve("Data fetched successfully!");
+        } else {
+          reject("Network Error!");
+        }
+      }, 3000);
+    });
+  }
+
+  simulateNetworkRequest()
+  .then(function(message) {
+    console.log(message);
+  })
+  .catch(function(error) {
+    console.log(error);
+  });
+
+  async function fetchData() {
+    try {
+      var response = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+      var data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.log("Error:", error);
+    }
+  }
+  
+  fetchData();
+
+  //step3
+  
