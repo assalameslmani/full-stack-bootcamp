@@ -60,4 +60,34 @@ setTimeout(function() {
   fetchData();
 
   //step3
-  
+  var postIds = [1, 2, 3];
+var promises = postIds.map(function(postId) {
+  return fetch("https://jsonplaceholder.typicode.com/posts/" + postId)
+    .then(function(response) {
+      return response.json();
+    });
+});
+
+Promise.all(promises)
+  .then(function(data) {
+    console.log(data);
+  })
+  .catch(function(error) {
+    console.log("Error:", error);
+  });
+
+  var postIds = [4, 5, 6, 7, 8];
+
+async function processPromises() {
+  for (var postId of postIds) {
+    try {
+      var response = await fetch("https://jsonplaceholder.typicode.com/posts/" + postId);
+      var data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.log("Error:", error);
+    }
+  }
+}
+
+processPromises();
