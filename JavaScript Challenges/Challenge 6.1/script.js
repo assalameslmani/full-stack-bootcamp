@@ -16,3 +16,13 @@ fetch("https://uselessfacts.jsph.pl/random.json?language=en")
 });
 
 //step3
+async function fetchRandomFact(){
+    try{
+        const response = await fetch("https://uselessfacts.jsph.pl/random.json?language=en");
+        const data = await response.json();
+        const randomFact= data.text;
+        console.log(randomFact);
+    }catch (error){
+        console.log("An error occured while fetching the random fact");
+    }
+}
