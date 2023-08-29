@@ -26,3 +26,24 @@ async function fetchRandomFact(){
         console.log("An error occured while fetching the random fact");
     }
 }
+
+
+//step4
+const urls = ["https://dog.ceo/api/breeds/image/random","https://dog.ceo/api/breeds/image/random"];
+
+const fetchImages = async() =>{
+    try{
+        const promises = urls.map(url => fetch(url));
+        const responses = await Promise.all(promises);
+        const images = await
+        Promise.all(responses.map(response=>response.blob()));
+        images.forEach (image => {
+            console.log(image);
+        });
+
+    }catch(error){
+        console.log("An error occured while fetching the images.");
+    }
+};
+
+fetchImages();
