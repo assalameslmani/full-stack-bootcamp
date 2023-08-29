@@ -14,3 +14,5 @@ fetch("https://uselessfacts.jsph.pl/random.json?language=en")
 
 .catch(error => {console.log ("An error occured while fetching the random fact.");
 });
+
+//step3
